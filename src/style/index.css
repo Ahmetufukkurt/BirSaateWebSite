@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  background: #fff2f2;
+}
+.info {
+  background-color: #464950;
+  padding: 11px;
+  text-align: center;
+}
+.info p {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: white;
+}
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+  width: 97vw;
+  margin: 20px;
+}
+header .logo {
+  height: 51px;
+  width: 161px;
+}
+.search-area {
+  display: flex;
+  align-items: center;
+}
+.search-icon {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  margin-left: 10px;
+}
+.search {
+  width: 294px;
+  height: 35px;
+  padding-left: 40px;
+  border: 1px solid #686868;
+  border-radius: 6px;
+}
+.navigation {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+}
+.navigation li {
+  margin-left: 20px;
+  display: flex;
+}
+.navigation li a {
+  margin-left: 10px;
+  text-decoration: none;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  color: #686868;
+}
+.profil {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  border: 1px solid #686868;
+  border-radius: 10px;
+  padding: 6px;
+}
+.profil img {
+  width: 36px;
+  height: 36px;
+}
+
+article.notification {
+  width: 97vw;
+  height: 100px;
+  margin: 20px;
+  margin-top: 30px;
+
+  background: #fff2f2;
+  border-radius: 12px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  color: #686868;
+  border-left: 15px solid #c32f27;
+  position: relative;
+}
+article.notification img {
+  width: 21.5;
+  height: 21.5;
+  right: 5px;
+  top: 5px;
+  position: absolute;
+}
+article.notification img:hover {
+  cursor: pointer;
+}
+article.slider {
+  width: 97vw;
+  height: 59vh;
+  margin: 20px;
+  margin-top: 30px;
+  position: relative;
+  background-color: orange;
+  border-radius: 12px;
+}
+.slides {
+  display: none;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  padding: 16px;
+  font-weight: bold;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: rgba(255, 166, 0, 0);
+  border: none;
+}
+.next {
+  right: 0;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+section {
+  margin: 30px;
+  margin-top: 65px;
+  position: relative;
+}
+section .title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 39px;
+  color: #686868;
+}
+section span {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #686868;
+}
+.paketler {
+  display: flex;
+  gap: 25px;
+}
+.paket {
+  width: 220px;
+  height: 310px;
+  border: 1px solid #686868;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 34px 45px 12px;
+  gap: 47px;
+  background: #ffffff;
+  box-shadow: 0px 5px 10px 2px rgba(255, 219, 219, 0.6);
+  border-radius: 12px;
+  margin-top: 45px;
+  margin-bottom: 45px;
+}
+.paket .title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #686868;
+  text-align: center;
+}
+.paket ul li {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  list-style-type: none;
+  color: #686868;
+}
+.paket button {
+  width: 165px;
+  height: 33px;
+  background: linear-gradient(91.58deg, #c32f27 -9.27%, #fe3636 107.22%);
+  border-radius: 6px;
+  color: white;
+  border: 0;
+  cursor: pointer;
+}
+.paket .ek {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  color: #686868;
+  margin-bottom: 13px;
+}

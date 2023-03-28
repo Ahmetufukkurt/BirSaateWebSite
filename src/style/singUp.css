@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.info {
+  background-color: #464950;
+  padding: 11px;
+  text-align: center;
+}
+.info p {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: white;
+}
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+  width: 97vw;
+  height: 5vh;
+  margin: 20px;
+}
+header .logo {
+  height: 51px;
+  width: 161px;
+}
+.search-area {
+  display: flex;
+  align-items: center;
+}
+.search-icon {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  margin-left: 10px;
+}
+.search {
+  width: 294px;
+  height: 35px;
+  padding-left: 40px;
+  border: 1px solid #686868;
+  border-radius: 6px;
+}
+.navigation {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+}
+.navigation li {
+  margin-left: 20px;
+  display: flex;
+}
+.navigation li a {
+  margin-left: 10px;
+  text-decoration: none;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  color: #686868;
+}
+.profil {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  border: 1px solid #686868;
+  border-radius: 10px;
+  padding: 6px;
+}
+.profil img {
+  width: 36px;
+  height: 36px;
+}
+section {
+  background-image: url("../img/singupbg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 83vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section h1 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 39px;
+  color: #686868;
+}
+.google {
+  width: 224px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #686868;
+  border-radius: 12px;
+  background-color: #ffffff;
+  gap: 10px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 16px;
+
+  color: #686868;
+}
+hr {
+  width: 10vw;
+}
+.signup-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 45vw;
+  height: 70vh;
+  background: #ffffff;
+  box-shadow: 0px 8px 6px rgba(0, 0, 0, 0.25);
+  border-radius: 24px;
+}
+.or {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+}
+.input-area {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+}
+input {
+  border: none;
+  border-bottom: 2px solid #888888;
+  padding: 10px 10px 3px 10px;
+  font-size: 16px;
+}
+input:active {
+  border-color: 1px solid #ffff;
+}
+.input-area span {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #888888;
+  margin-top: 10px;
+}
+.signup {
+  background: linear-gradient(91.58deg, #c32f27 -9.27%, #fe3636 107.22%);
+  border-radius: 12px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #ffffff;
+  margin-top: 30px;
+  width: 75%;
+  padding: 5px;
+  border: none;
+}
+.login {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+
+  color: #686868;
+}
+.login a {
+  font-weight: 600;
+  text-decoration: none;
+}
+.forget {
+  text-align: end;
+  align-self: flex-end;
+  margin-top: 5px;
+  cursor: pointer;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  color: #686868;
+}
+.eye {
+  width: 21px;
+  height: 17px;
+  position: absolute;
+  top: 60%;
+  right: 0;
+  cursor: pointer;
+}

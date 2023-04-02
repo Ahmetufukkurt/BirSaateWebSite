@@ -67,6 +67,12 @@ header .logo {
   letter-spacing: 0em;
   color: #686868;
 }
+.navigation li a:hover {
+  background: linear-gradient(91.58deg, #c32f27 -9.27%, #fe3636 107.22%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
 .profil {
   display: flex;
   justify-content: center;

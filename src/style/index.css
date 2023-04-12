@@ -4,12 +4,10 @@
   box-sizing: border-box;
 }
 body {
-  background: #fff2f2;
+  overflow-x: hidden;
 }
-.container {
-  background: #fff2f2;
-  display: flex;
-  flex-direction: column;
+.genel {
+  background-color: #fff2f2;
 }
 .info {
   background-color: #464950;
@@ -29,8 +27,9 @@ header {
   justify-content: space-around;
   align-items: center;
   margin-top: 20px;
-  width: 97vw;
+  width: 100%;
   margin: 20px;
+  position: relative;
 }
 header .logo {
   height: 51px;
@@ -74,6 +73,10 @@ header .logo {
   letter-spacing: 0em;
   color: #686868;
 }
+.responsive i {
+  color: black;
+  display: none;
+}
 .profil {
   display: flex;
   justify-content: center;
@@ -115,7 +118,7 @@ header .logo {
 }
 
 article.notification {
-  width: 97vw;
+  width: 97%;
   height: 100px;
   margin: 20px;
   margin-top: 30px;
@@ -145,13 +148,14 @@ article.notification img:hover {
   cursor: pointer;
 }
 article.slider {
-  width: 97vw;
+  width: 95%;
   height: 59vh;
   margin: 20px;
   margin-top: 30px;
   position: relative;
   background-color: orange;
   border-radius: 12px;
+  margin: auto;
 }
 .slides {
   display: none;
@@ -212,7 +216,7 @@ section.menu span {
 }
 .paketler {
   display: flex;
-  flex-wrap: wrap;
+  overflow-x: auto;
   gap: 25px;
 }
 .paket {
@@ -286,7 +290,7 @@ section.menu span {
   margin-bottom: 13px;
 }
 .appreciations {
-  width: 97vw;
+  width: 95%;
   margin: 20px;
   margin-top: 30px;
   display: flex;
@@ -380,7 +384,7 @@ button:hover {
   cursor: pointer;
 }
 .about-us {
-  width: 95vw;
+  width: 98%;
   margin: 30px;
 }
 .about {
@@ -415,7 +419,6 @@ button:hover {
 details {
   width: 100%;
   margin: 0 auto;
-
   border-radius: 12px;
   margin-bottom: 0.5rem;
   overflow: hidden;
@@ -465,11 +468,12 @@ details p {
 footer {
   position: relative;
   overflow-x: hidden;
+  width: 100%;
 }
 .footer-top {
   display: flex;
   justify-content: space-between;
-  width: 100vw;
+
   background: #ffdbdb99;
 }
 
@@ -577,4 +581,136 @@ i {
   left: 30px;
   width: 210px;
   height: 240px;
+}
+.toggle-button {
+  position: absolute;
+  top: 0.75rem;
+  right: 2rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: black;
+  border-radius: 10px;
+}
+.responsive a {
+  display: none;
+}
+@media (max-width: 1160px) {
+  .container {
+    width: 100%;
+  }
+
+  .search {
+    display: none;
+  }
+  .toggle-button {
+    display: flex;
+  }
+  .navigation {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+  header {
+    gap: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navigation ul {
+    flex-direction: column;
+    width: 100%;
+  }
+  .navigation li {
+    text-align: center;
+    margin: 5px;
+  }
+  .navigation li img {
+    display: none;
+  }
+  .navigation li.profil {
+    display: none;
+  }
+  .navigation.active {
+    display: flex;
+  }
+  .responsive a {
+    display: block;
+  }
+  hr {
+    width: 100%;
+    background-color: #686868;
+    height: 2px;
+    margin: 10px;
+  }
+}
+@media (max-width: 800px) {
+  .footer-logo {
+    display: none;
+  }
+  .footer-top-left img {
+    margin: 30px;
+  }
+  .footer-middle-left {
+    margin: 30px;
+  }
+  .footer-top-right {
+    margin-right: 30px;
+  }
+  .footer-middle-right {
+    margin-right: 30px;
+  }
+}
+@media (max-width: 550px) {
+  .footer-top {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-top-right {
+    display: none;
+  }
+  .footer-middle {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-middle-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-nav:nth-child(2) {
+    display: none;
+  }
+  .footer-middle-right {
+    display: flex;
+  }
+  .footer-middle-right img {
+    display: none;
+  }
+  .contracts {
+    display: none;
+  }
+  .social {
+    gap: 10px;
+    justify-content: space-between;
+  }
+  .footer-bottom {
+    justify-content: center;
+  }
+  .footer-bottom img {
+    display: none;
+  }
 }

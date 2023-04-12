@@ -3,8 +3,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  background: #fff2f2;
+}
 .container {
   background: #fff2f2;
+  display: flex;
+  flex-direction: column;
 }
 .info {
   background-color: #464950;
@@ -34,6 +39,7 @@ header .logo {
 .search-area {
   display: flex;
   align-items: center;
+  position: relative;
 }
 .search-icon {
   width: 16px;
@@ -44,10 +50,11 @@ header .logo {
 .search {
   width: 294px;
   height: 35px;
-  padding-left: 40px;
+  padding-left: 30px;
   border: 1px solid #686868;
   border-radius: 6px;
 }
+
 .navigation {
   display: flex;
   list-style-type: none;
@@ -60,31 +67,51 @@ header .logo {
 .navigation li a {
   margin-left: 10px;
   text-decoration: none;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
   letter-spacing: 0em;
   color: #686868;
 }
+.profil {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #686868;
+  border-radius: 10px;
+}
+.profil img {
+  width: 36px;
+  height: 36px;
+}
+.profil button {
+  background-color: #fff;
+  margin-left: 10px;
+  text-decoration: none;
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  color: #686868;
+  border: none;
+  display: flex;
+  gap: 10px;
+}
+.profil button:hover {
+  background-color: #fff;
+  border: none;
+}
+#dropdown ul {
+  background-color: #fff;
+}
+
 .navigation li a:hover {
   background: linear-gradient(91.58deg, #c32f27 -9.27%, #fe3636 107.22%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-}
-.profil {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
-  border: 1px solid #686868;
-  border-radius: 10px;
-  padding: 6px;
-}
-.profil img {
-  width: 36px;
-  height: 36px;
 }
 
 article.notification {
@@ -191,7 +218,7 @@ section.menu span {
 .paket {
   width: 220px;
   height: 310px;
-  border: 1px solid #686868;
+
   border-radius: 12px;
   display: flex;
   flex-direction: column;
@@ -204,6 +231,7 @@ section.menu span {
   margin-top: 45px;
   margin-bottom: 45px;
 }
+
 .paket .title {
   font-family: "Montserrat";
   font-style: normal;
@@ -231,6 +259,21 @@ section.menu span {
   color: white;
   border: 0;
   cursor: pointer;
+}
+.paket:hover {
+  background-image: url("../img/bg.png");
+  background-position: center;
+  box-shadow: 0px 5px 10px rgba(255, 219, 219, 0.6);
+}
+.paket:hover p {
+  color: #fff;
+}
+.paket:hover li {
+  color: #fff;
+}
+.paket:hover button {
+  background: #fff;
+  color: #686868;
 }
 .paket .ek {
   font-family: "Montserrat";

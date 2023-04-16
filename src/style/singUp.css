@@ -3,9 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
-.container {
-  width: 100%;
-  height: 100vh;
+body {
+  overflow-x: hidden;
+}
+.genel {
+  background-color: #fff2f2;
 }
 .info {
   background-color: #464950;
@@ -25,9 +27,9 @@ header {
   justify-content: space-around;
   align-items: center;
   margin-top: 20px;
-  width: 97vw;
-  height: 5vh;
+  width: 95%;
   margin: 20px;
+  position: relative;
 }
 header .logo {
   height: 51px;
@@ -36,6 +38,7 @@ header .logo {
 .search-area {
   display: flex;
   align-items: center;
+  position: relative;
 }
 .search-icon {
   width: 16px;
@@ -46,10 +49,11 @@ header .logo {
 .search {
   width: 294px;
   height: 35px;
-  padding-left: 40px;
+  padding-left: 30px;
   border: 1px solid #686868;
   border-radius: 6px;
 }
+
 .navigation {
   display: flex;
   list-style-type: none;
@@ -62,26 +66,57 @@ header .logo {
 .navigation li a {
   margin-left: 10px;
   text-decoration: none;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
   letter-spacing: 0em;
   color: #686868;
 }
+.responsive i {
+  color: black;
+  display: none;
+}
 .profil {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 15px;
   border: 1px solid #686868;
   border-radius: 10px;
-  padding: 6px;
 }
 .profil img {
   width: 36px;
   height: 36px;
 }
+.profil button {
+  background-color: #fff;
+  margin-left: 10px;
+  text-decoration: none;
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  color: #686868;
+  border: none;
+  display: flex;
+  gap: 10px;
+}
+.profil button:hover {
+  background-color: #fff;
+  border: none;
+}
+#dropdown ul {
+  background-color: #fff;
+}
+
+.navigation li a:hover {
+  background: linear-gradient(91.58deg, #c32f27 -9.27%, #fe3636 107.22%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
 section {
   background-image: url("../img/singupbg.png");
   background-size: cover;
@@ -102,7 +137,7 @@ section h1 {
   color: #686868;
 }
 .google {
-  width: 224px;
+  width: 60%;
   height: 50px;
   display: flex;
   justify-content: center;
@@ -215,4 +250,215 @@ input:active {
   top: 60%;
   right: 0;
   cursor: pointer;
+}
+.navigation {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+}
+.navigation li {
+  margin-left: 20px;
+  display: flex;
+}
+.navigation li a {
+  margin-left: 10px;
+  text-decoration: none;
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  color: #686868;
+}
+.responsive i {
+  color: black;
+  display: none;
+}
+.profil {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #686868;
+  border-radius: 10px;
+}
+.profil img {
+  width: 36px;
+  height: 36px;
+}
+.profil button {
+  background-color: #fff;
+  margin-left: 10px;
+  text-decoration: none;
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  color: #686868;
+  border: none;
+  display: flex;
+  gap: 10px;
+}
+.profil button:hover {
+  background-color: #fff;
+  border: none;
+}
+#dropdown ul {
+  background-color: #fff;
+}
+
+.navigation li a:hover {
+  background: linear-gradient(91.58deg, #c32f27 -9.27%, #fe3636 107.22%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.toggle-button {
+  position: absolute;
+  top: 0.75rem;
+  right: 2rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: black;
+  border-radius: 10px;
+}
+.responsive a {
+  display: none;
+}
+@media (max-width: 1160px) {
+  .container {
+    width: 100%;
+  }
+  .search-icon {
+    display: none;
+  }
+  .search {
+    display: none;
+  }
+  .toggle-button {
+    display: flex;
+  }
+  .navigation {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+  header {
+    gap: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navigation ul {
+    flex-direction: column;
+    width: 100%;
+  }
+  .navigation li {
+    text-align: center;
+    margin: 5px;
+  }
+  .navigation li img {
+    display: none;
+  }
+  .navigation li.profil {
+    display: none;
+  }
+  .navigation.active {
+    display: flex;
+  }
+  .responsive a {
+    display: block;
+  }
+  hr {
+    width: 100%;
+    background-color: #686868;
+    height: 2px;
+    margin: 10px;
+  }
+  .signup-area {
+    width: 60%;
+  }
+}
+@media (max-width: 800px) {
+  .footer-logo {
+    display: none;
+  }
+  .footer-top-left img {
+    margin: 30px;
+  }
+  .footer-middle-left {
+    margin: 30px;
+  }
+  .footer-top-right {
+    margin-right: 30px;
+  }
+  .footer-middle-right {
+    margin-right: 30px;
+  }
+  .signup-area {
+    width: 70%;
+  }
+}
+@media (max-width: 550px) {
+  .footer-top {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-top-right {
+    display: none;
+  }
+  .footer-middle {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-middle-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-nav:nth-child(2) {
+    display: none;
+  }
+  .footer-middle-right {
+    display: flex;
+  }
+  .footer-middle-right img {
+    display: none;
+  }
+  .contracts {
+    display: none;
+  }
+  .social {
+    gap: 10px;
+    justify-content: space-between;
+  }
+  .footer-bottom {
+    justify-content: center;
+  }
+  .footer-bottom img {
+    display: none;
+  }
+  .signup-area {
+    width: 70%;
+  }
+  section h1 {
+    font-size: 20px;
+  }
+  .login {
+    font-size: 10px;
+  }
 }

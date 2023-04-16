@@ -5,6 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>sign Up</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="../style/singUp.css" />
     <link
       rel="stylesheet"
@@ -12,7 +28,7 @@
     />
   </head>
   <body>
-    <div class="container">
+    <div class="genel">
       <div class="info">
         <p>
           Tüm eğitim paketlerinde geçerli %20 tanışma indiriminden hemen
@@ -28,7 +44,15 @@
           <img src="../img/search-icon.png" alt="" class="search-icon" />
           <input type="text" class="search" placeholder="Eğitim Ara" />
         </div>
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span
+        ></a>
         <ul class="navigation">
+          <li class="responsive active"><a href="">Giriş Yap</a></li>
+          <li class="responsive"><a href="">Kayıt Ol</a></li>
+          <hr class="responsive" />
           <li>
             <img src="../img/paketler-icon.png" alt="" /><a
               href="../pages/package.html"
@@ -37,7 +61,7 @@
           </li>
           <li>
             <img src="../img/egitmeen-ol-icon.png" alt="" /><a
-              href="../../src/pages/signup.html"
+              href="../pages/signup.html"
               >Eğitmen Ol</a
             >
           </li>
@@ -47,15 +71,49 @@
               >Hakkımızda</a
             >
           </li>
-          <li><img src="../img/blog-icon.png" alt="" /><a href="">Blog</a></li>
+
           <li>
-            <img src="../img/blog-icon.png" alt="" /><a href="./videolist.html"
+            <img src="../img/blog-icon.png" alt="" /><a
+              href="../pages/videolist.html"
               >Eğitimler</a
             >
           </li>
           <li class="profil">
-            <a href="./profile.html">Profil</a>
-            <img src="../img/profile-icon.png" alt="" />
+            <button
+              id="dropdownDefaultButton"
+              data-dropdown-toggle="dropdown"
+              class="text-white bg-blue-700 hover:bg-blue-800 font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              type="button"
+            >
+              Profil
+              <img src="../img/profile-icon.png" alt="" />
+            </button>
+            <!-- Dropdown menu -->
+            <div
+              id="dropdown"
+              class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
+            >
+              <ul
+                class="py-2 text-sm text-gray-700 dark:text-gray-200"
+                aria-labelledby="dropdownDefaultButton"
+              >
+                <li>
+                  <a
+                    href="./login.html"
+                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                    >Giriş Yap</a
+                  >
+                </li>
+                <hr style="height: 3px; background-color: #cecece" />
+                <li>
+                  <a
+                    href="./signup.html"
+                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                    >Kayıt Ol</a
+                  >
+                </li>
+              </ul>
+            </div>
           </li>
         </ul>
       </header>
@@ -101,5 +159,7 @@
       </section>
     </div>
     <script src="../javascript/SingUp.js"></script>
+    <script src="../javascript/genel.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
   </body>
 </html>
